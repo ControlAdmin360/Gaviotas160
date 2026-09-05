@@ -181,7 +181,7 @@ function iniServicesDepas() {
 
 //  SWICHT URL PARA CONEXION publica de tu Web App en: GAS / VERCEL 'COEXION AL BACKEND'
 const GAS_API_URL = "https://backend-zeta-coral-88.vercel.app/api/rpc";
-//const GAS_API_URL = "https://script.google.com/macros/s/AKfycbxPzkMGK69jshYZ9WNQirqId01slo41Q5dhaRkbGi0P31UK4nPu-hPs-ADaIvcfQc6V-w/exec";
+//const GAS_API_URL = "https://script.google.com/macros/s/AKfycbzFqp2a1_zQPrw_1syxd9yl_nSHhiUN7f00LqxQSZzclgp1CzOrm2Vrijv31RP2dO_yew/exec";
 
 // --- Motor Principal netRun (Conexión Directa e Híbrida a Apps Script) ---
 window.netRun = function () {
@@ -4304,14 +4304,6 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.disabled = true;
     btn.textContent = '⏳ Generando Reporte…';
     linksDiv.innerHTML = '';
-    /*
-    let token = null;
-    try { token = await ensureAuthTokenBanco(); } catch { token = null; }
-    if (!token) {
-      btn.disabled = false;
-      btn.textContent = btn.dataset._old;
-      return;
-    }*/
 
     netRun()
       .withSuccessHandler(res => {
